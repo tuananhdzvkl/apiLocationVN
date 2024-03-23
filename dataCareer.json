@@ -1,0 +1,116 @@
+[
+    {
+        "faculty_id": "0",
+        "faculties_name": "Ngành",
+        "majors_id": "0",
+        "majors_name": ""
+    },
+    {
+        "faculty_id": "1",
+        "faculties_name": "Công nghệ thông tin",
+        "majors_id": "1",
+        "majors_name": "Phát triển phần mềm"
+    },
+    {
+        "faculty_id": "1",
+        "faculties_name": "Công nghệ thông tin",
+        "majors_id": "2",
+        "majors_name": "Lập trình Web"
+    },
+    {
+        "faculty_id": "1",
+        "faculties_name": "Công nghệ thông tin",
+        "majors_id": "3",
+        "majors_name": "Lập trình Mobile"
+    },
+    {
+        "faculty_id": "1",
+        "faculties_name": "Công nghệ thông tin",
+        "majors_id": "4",
+        "majors_name": "Ứng dụng phần mềm"
+    },
+    {
+        "faculty_id": "1",
+        "faculties_name": "Công nghệ thông tin",
+        "majors_id": "5",
+        "majors_name": "Xử lý dữ liệu"
+    },
+    {
+        "faculty_id": "1",
+        "faculties_name": "Công nghệ thông tin",
+        "majors_id": "6",
+        "majors_name": "Lập trình Game"
+    },
+    {
+        "faculty_id": "2",
+        "faculties_name": "Quản trị kinh doanh",
+        "majors_id": "1",
+        "majors_name": "Digital Marketing"
+    },
+    {
+        "faculty_id": "2",
+        "faculties_name": "Quản trị kinh doanh",
+        "majors_id": "2",
+        "majors_name": "Marketing & sale"
+    },
+    {
+        "faculty_id": "2",
+        "faculties_name": "Quản trị kinh doanh",
+        "majors_id": "3",
+        "majors_name": "Truyền thông & Tổ chức sự kiện"
+    },
+    {
+        "faculty_id": "2",
+        "faculties_name": "Quản trị kinh doanh",
+        "majors_id": "4",
+        "majors_name": "Quản trị khách sạn - Nhà hàng"
+    },
+    {
+        "faculty_id": "2",
+        "faculties_name": "Quản trị kinh doanh",
+        "majors_id": "5",
+        "majors_name": "Quản trị Dịch vụ du lịch & Lữ hành"
+    },
+    {
+        "faculty_id": "2",
+        "faculties_name": "Quản trị kinh doanh",
+        "majors_id": "6",
+        "majors_name": "Logistics"
+    },
+    {
+        "faculty_id": "3",
+        "faculties_name": "Công nghệ kỹ thật & tự động hóa",
+        "majors_id": "1",
+        "majors_name": "Công nghệ kỹ thuật điện, điện tử"
+    },
+    {
+        "faculty_id": "3",
+        "faculties_name": "Công nghệ kỹ thật & tự động hóa",
+        "majors_id": "2",
+        "majors_name": "CN kỹ thuật điều khiển & tự động hóa"
+    },
+    {
+        "faculty_id": "4",
+        "faculties_name": "Ngành khác",
+        "majors_id": "1",
+        "majors_name": "Công nghệ kỹ thuật cơ khí"
+    },
+    {
+        "faculty_id": "4",
+        "faculties_name": "Ngành khác",
+        "majors_id": "2",
+        "majors_name": "Thiết kế đồ họa"
+    },
+    {
+        "faculty_id": "4",
+        "faculties_name": "Ngành khác",
+        "majors_id": "3",
+        "majors_name": "Dược (dự kiến)"
+    },
+    {
+        "faculty_id": "4",
+        "faculties_name": "Ngành khác",
+        "majors_id": "4",
+        "majors_name": "Chíp & Bán dẫn (dự kiến)"
+    }
+]
