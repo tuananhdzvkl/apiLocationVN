@@ -557,7 +557,67 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-  
+    <script>
+        var cities = document.getElementById("city");
+        var districts = document.getElementById("district");
+        var wards = document.getElementById("ward");
+        
+        var Parameter = {
+            url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+            method: "GET",
+            responseType: "application/json",
+        };
+        
+        var promise = axios(Parameter);
+        
+        promise.then(function (result) {
+            renderLocation(result.data);
+        });
+        
+        function renderLocation(data) {
+            for (const location of data) {
+                var opt = document.createElement('option');
+                opt.value = location.province_name;
+                opt.text = location.province_name;
+                opt.setAttribute('data-province-code', location.province_code);
+                opt.setAttribute('data-district-code', location.district_code);
+                opt.setAttribute('data-ward-code', location.ward_code);
+                cities.options.add(opt);
+            }
+        
+            cities.onchange = function () {
+                districts.length = 1;
+                wards.length = 1;
+                const selectedProvinceCode = this.options[this.selectedIndex].dataset.provinceCode;
+                const selectedDistricts = data.filter(location => location.province_code == selectedProvinceCode)[0].districts;
+        
+                for (const district of selectedDistricts) {
+                    var opt = document.createElement('option');
+                    opt.value = district.district_name;
+                    opt.text = district.district_name;
+                    opt.setAttribute('data-district-code', district.district_code);
+                    districts.options.add(opt);
+                }
+            };
+        
+            districts.onchange = function () {
+                wards.length = 1;
+                const selectedDistrictCode = this.options[this.selectedIndex].dataset.districtCode;
+                const selectedProvinceCode = cities.options[cities.selectedIndex].dataset.provinceCode;
+                const selectedWards = data.filter(location => location.province_code == selectedProvinceCode)[0].districts
+                    .filter(district => district.district_code == selectedDistrictCode)[0].wards;
+        
+                for (const ward of selectedWards) {
+                    var opt = document.createElement('option');
+                    opt.value = ward.ward_name;
+                    opt.text = ward.ward_name;
+                    opt.setAttribute('data-ward-code', ward.ward_code);
+                    wards.options.add(opt);
+                }
+            };
+        }
+        
+    </script>
 
 </body>
 
